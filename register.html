@@ -1,0 +1,50 @@
+{% block content %}
+{% load static %}
+{% include 'navbar.html' %}
+<img src="{% static "images/bg_pic.jpg" %}">
+       <style>
+        .footer {
+          position:fixed;
+          bottom:0;
+          left:0;
+          width:100%;
+          color: #ffffff;
+          height: 80px;
+          padding:8px;
+          align-content:center;
+          background-color: #404040;
+          opacity:0;
+        }
+        
+        </style>
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <title>Mental Health Care </title>
+        <h1 align="center">Mental Wellness Care</h1>      
+        <fieldset>
+              <section>
+               <div class="container">
+                  <div class="quick-search">  
+                     <h3 class="heading-title"> How You Feeling Today? </h3>
+                     <ul class="quick_list ">
+                        <li class="one"><a href="{% url 'login' %} ">Anxiety</a></li>
+                     <li class="one"><a href="https://www.calmsage.com?s=Stress">Stress</a></li>
+                     <li class="one"><a href="https://www.calmsage.com?s=Activities">Activities</a></li>
+                     <li class="one"><a href="https://www.calmsage.com?s=Depression">Depression</a></li>
+                     <li class="one"><a href="https://www.calmsage.com?s=Mood Swings">Mood Swings</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+          </fieldset>  
+    </form> 
+    <footer>
+        <div class="footer">
+            <p align="center"> Copyright © 2024 your_peace_matters_first.com All rights reserved.</p>
+            <p align="center">      Disclaimer: Content Provided by your_peace_matters_first serves as information purpose only and cannot be directed as a substitute for any type of professional medical advice. Therefore, we encourage our readers to seek the guidance .</p>
+        </div>
+    </footer>
+  </body>
+
+{%endblock %}
+</html>
